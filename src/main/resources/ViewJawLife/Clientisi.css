@@ -1,0 +1,184 @@
+/* ----------------------------------------
+   Navigasi Utama
+---------------------------------------- */
+.navbar {
+    -fx-background-color: #ffffff;
+    -fx-spacing: 16;
+}
+
+.brand-title {
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
+
+/* ----------------------------------------
+   Navigasi Item (Header/Menu)
+---------------------------------------- */
+.nav-item {
+    -fx-text-fill: #1A1A1A;
+    -fx-font-size: 14px;
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+    -fx-padding: 8 12;
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+.nav-item:hover {
+    -fx-background-color: #e5f7e7;
+    -fx-text-fill: #2e7d32;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.nav-item:pressed {
+    -fx-background-color: #cde5d4;
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+}
+
+.nav-item.active {
+    -fx-text-fill: #4DAA57;
+    -fx-font-weight: bold;
+    -fx-border-color: transparent transparent #4DAA57 transparent;
+    -fx-border-width: 0 0 2px 0;
+    -fx-background-color: #F0F6F0;
+}
+
+/* ----------------------------------------
+   Search Bar & Input
+---------------------------------------- */
+.search-bar {
+    -fx-background-color: #EEF5EE;
+    -fx-background-radius: 16px;
+    -fx-padding: 6 12;
+}
+
+.search-input {
+    -fx-background-color: #EEF5EE;
+    -fx-background-radius: 8px;
+    -fx-padding: 6 12;
+}
+
+.profile-icon {
+    -fx-background-radius: 100%;
+}
+
+/* ----------------------------------------
+   Section & Judul
+---------------------------------------- */
+.section-title {
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+}
+
+.client-name {
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+}
+
+.client-class {
+    -fx-text-fill: #4DAA57;
+    -fx-font-size: 14px;
+}
+
+/* ----------------------------------------
+   Tombol Tab
+---------------------------------------- */
+.tab-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #888;
+    -fx-font-size: 14px;
+    -fx-background-radius: 0;
+    -fx-border-color: transparent;
+}
+
+.tab-button.active {
+    -fx-text-fill: #1A1A1A;
+    -fx-border-width: 0 0 2px 0;
+    -fx-border-color: #4DAA57;
+}
+
+/* ----------------------------------------
+   Tombol Edit
+---------------------------------------- */
+.edit-button {
+    -fx-background-color: #F2F6F2;
+    -fx-text-fill: #1A1A1A;
+    -fx-background-radius: 16;
+    -fx-padding: 4 12;
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+.edit-button:hover {
+    -fx-background-color: #e5ede5;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-cursor: hand;
+}
+
+.edit-button:pressed {
+    -fx-scale-x: 0.96;
+    -fx-scale-y: 0.96;
+}
+
+/* ----------------------------------------
+   Tombol Aksi Umum
+---------------------------------------- */
+.action-button {
+    -fx-background-color: #F0F2F0;
+    -fx-background-radius: 24;
+    -fx-text-fill: #1A1A1A;
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+.action-button:hover {
+    -fx-background-color: #e2f0e8;
+    -fx-scale-x: 1.04;
+    -fx-scale-y: 1.04;
+    -fx-cursor: hand;
+}
+
+.action-button:pressed {
+    -fx-scale-x: 0.97;
+    -fx-scale-y: 0.97;
+}
+
+/* Versi Hijau */
+.action-button.green {
+    -fx-background-color: #D2EEDB;
+    -fx-text-fill: #1A1A1A;
+}
+
+.action-button.green:hover {
+    -fx-background-color: #bce0c7;
+    -fx-scale-x: 1.04;
+    -fx-scale-y: 1.04;
+    -fx-cursor: hand;
+}
+
+/* ----------------------------------------
+   Grid Detail Klien
+---------------------------------------- */
+.client-details .label {
+    -fx-font-size: 14px;
+}
+
+.detail-grid > * {
+    -fx-padding: 10px 0;
+    -fx-border-color: #b2e5b2;
+    -fx-border-width: 0 0 1px 0;
+}
+
+.detail-grid .last-row {
+    -fx-border-width: 0;
+}
+
+/* ----------------------------------------
+   Filter Button (opsional)
+---------------------------------------- */
+.filter-button {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #DDE3DD;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+}

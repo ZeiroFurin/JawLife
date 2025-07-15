@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane stylesheets="@../ViewJawLife/ClinetProg.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JawLife.ClientProgress">
+
+    <top>
+        <HBox alignment="CENTER_LEFT" spacing="32" styleClass="navbar">
+            <padding><Insets bottom="16" left="32" right="32" top="16" /></padding>
+            <children>
+                <Label styleClass="brand-title" text="Client Progress" />
+                <Button styleClass="nav-button" text="Dashboard" />
+                <Button styleClass="nav-button" text="Clients" />
+                <Button styleClass="nav-button" text="Programs" />
+                <Button styleClass="nav-button" text="Recipes" />
+                <Region HBox.hgrow="ALWAYS" />
+                <Button graphicTextGap="8" onAction="#handleBackToClient" styleClass="profile-button" text="Back">
+                </Button>
+            </children>
+        </HBox>
+    </top>
+
+    <center>
+        <HBox alignment="TOP_LEFT" spacing="48">
+            <padding><Insets bottom="32" left="32" right="32" top="32" /></padding>
+            <VBox spacing="32" VBox.vgrow="ALWAYS">
+                <VBox spacing="8">
+                    <Label styleClass="section-title" text="Client Progress" />
+                    <Label styleClass="section-subtitle" text="Track and manage client progress effectively." />
+                </VBox>
+
+                <VBox spacing="16">
+                    <Label styleClass="chart-title" text="Weight Progress" />
+                    <LineChart fx:id="weightChart" prefHeight="250" prefWidth="600" title="Weight Over Time">
+                        <xAxis>
+                            <CategoryAxis label="Month" />
+                        </xAxis>
+                        <yAxis>
+                            <NumberAxis label="Weight (lbs)" />
+                        </yAxis>
+                    </LineChart>
+                </VBox>
+
+                <VBox spacing="16">
+                    <Label styleClass="chart-title" text="Calorie Intake" />
+                    <BarChart fx:id="calorieChart" prefHeight="200" prefWidth="600" title="Daily Calorie Intake">
+                        <xAxis>
+                            <CategoryAxis label="Day" />
+                        </xAxis>
+                        <yAxis>
+                            <NumberAxis label="Calories (kcal)" />
+                        </yAxis>
+                    </BarChart>
+                </VBox>
+            </VBox>
+
+            <VBox spacing="16" styleClass="profile-panel">
+                <Label fx:id="clientNameLabel" styleClass="client-name" text="Name" />
+                <Label fx:id="programLabel" styleClass="client-sub" text="Program Diet" />
+
+                <GridPane hgap="12" vgap="4">
+                    <Label text="Start Date" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                    <Label fx:id="startDateLabel" text="-" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                    <Label text="End Date" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                    <Label fx:id="endDateLabel" text="-" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               <columnConstraints>
+                  <ColumnConstraints />
+                  <ColumnConstraints />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints />
+                  <RowConstraints />
+               </rowConstraints>
+                </GridPane>
+
+                <VBox spacing="8">
+                    <Label styleClass="session-title" text="New Session" />
+                    <Label text="Session Date" />
+                    <DatePicker />
+                    <Label text="Session Notes" />
+                    <TextArea prefRowCount="3" promptText="Enter session notes" />
+                    <Button styleClass="confirm-button" text="Confirm Session" />
+                </VBox>
+            </VBox>
+        </HBox>
+    </center>
+</BorderPane>

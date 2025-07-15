@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="800.0" prefWidth="1280.0" styleClass="root" stylesheets="@exercise.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pinal.ExercisePageController">
+    <top>
+        <HBox alignment="CENTER_LEFT" prefHeight="69.3333" prefWidth="1280.0" styleClass="header-nav">
+            <HBox alignment="CENTER_LEFT" spacing="10">
+                <Label styleClass="logo-text" text="JawLife" />
+            </HBox>
+            <Region HBox.hgrow="ALWAYS" />
+            <HBox alignment="CENTER" prefHeight="39.0" prefWidth="467.0" spacing="20.0" styleClass="nav-links">
+                <Button onAction="#dashboard" text="Overview" />
+                <Button onAction="#handleRecipesClick" text="Billing" />
+                <Button styleClass="nav-button-active" text="Exercises" />
+                <Button onAction="#handleProgressClick" text="Proggress" />
+                <Button onAction="#handleSettingsClick" text="Settings" />
+            </HBox>
+            <Region HBox.hgrow="ALWAYS" />
+            <HBox alignment="CENTER_RIGHT" spacing="20.0">
+                <Button onAction="#handleNotificationsClick" styleClass="icon-button">
+
+                </Button>
+                <Button onAction="#handleProfileClick" styleClass="icon-button">
+                </Button>
+            </HBox>
+        </HBox>
+    </top>
+    <center>
+        <ScrollPane fitToWidth="true" hbarPolicy="NEVER" prefWidth="1280.0" style="-fx-background-color: transparent;">
+            <content>
+                <VBox styleClass="main-content">
+                    <VBox alignment="CENTER" styleClass="title-section">
+                        <Label styleClass="main-title" text="Today's Exercise" />
+                        <Label styleClass="subtitle" text="&quot;The only bad workout is the one that didn't happen.&quot;" />
+                    </VBox>
+                    <VBox styleClass="category-section">
+                        <Label styleClass="category-title" text="Cardio" />
+                        <Region styleClass="category-divider" />
+                        <FlowPane hgap="20" vgap="20">
+                            <Button onAction="#handleRunningClick" styleClass="exercise-card">
+                                <graphic>
+                                    <HBox alignment="CENTER_LEFT" spacing="10">
+                                        <VBox><Label styleClass="exercise-name" text="Running" /><Label styleClass="exercise-details" text="30 minutes" /></VBox>
+                                        <Region HBox.hgrow="ALWAYS" />
+                                        <Label styleClass="exercise-calories" text="300 calories" />
+                                    </HBox>
+                                </graphic>
+                            </Button>
+                            <Button onAction="#handleCyclingClick" styleClass="exercise-card">
+                                <graphic>
+                                    <HBox alignment="CENTER_LEFT" spacing="10">
+                                        <VBox><Label styleClass="exercise-name" text="Walking" /><Label styleClass="exercise-details" text="20 minutes" /></VBox>
+                                        <Region HBox.hgrow="ALWAYS" />
+                                        <Label styleClass="exercise-calories" text="200 calories" />
+                                    </HBox>
+                                </graphic>
+                            </Button>
+                            <Button onAction="#handleSwimmingClick" styleClass="exercise-card">
+                                <graphic>
+                                    <HBox alignment="CENTER_LEFT" spacing="10">
+                                        <VBox><Label styleClass="exercise-name" text="Cycling" /><Label styleClass="exercise-details" text="25 minutes" /></VBox>
+                                        <Region HBox.hgrow="ALWAYS" />
+                                        <Label styleClass="exercise-calories" text="250 calories" />
+                                    </HBox>
+                                </graphic>
+                            </Button>
+                        </FlowPane>
+                    </VBox>
+                    <VBox styleClass="category-section">
+                        <Label styleClass="category-title" text="Strength Training" />
+                        <Region styleClass="category-divider" />
+                        <FlowPane hgap="20" vgap="20">
+                            <Button onAction="#handlePushupsClick" styleClass="exercise-card">
+                                <graphic>
+                                    <HBox alignment="CENTER_LEFT" spacing="10">
+                                        <VBox><Label styleClass="exercise-name" text="Push-ups" /><Label styleClass="exercise-details" text="3 sets of 12 reps" /></VBox>
+                                        <Region HBox.hgrow="ALWAYS" />
+                                        <Label styleClass="exercise-calories" text="100 calories" />
+                                    </HBox>
+                                </graphic>
+                            </Button>
+                            <Button onAction="#handleSquatsClick" styleClass="exercise-card">
+                                <graphic>
+                                    <HBox alignment="CENTER_LEFT" spacing="10">
+                                        <VBox><Label styleClass="exercise-name" text="Squats" /><Label styleClass="exercise-details" text="3 sets of 12 reps" /></VBox>
+                                        <Region HBox.hgrow="ALWAYS" />
+                                        <Label styleClass="exercise-calories" text="120 calories" />
+                                    </HBox>
+                                </graphic>
+                            </Button>
+                            <Button onAction="#handleLungesClick" styleClass="exercise-card">
+                                <graphic>
+                                    <HBox alignment="CENTER_LEFT" spacing="10">
+                                        <VBox><Label styleClass="exercise-name" text="Pull-Up" /><Label styleClass="exercise-details" text="3 sets of 15 reps" /></VBox>
+                                        <Region HBox.hgrow="ALWAYS" />
+                                        <Label styleClass="exercise-calories" text="110 calories" />
+                                    </HBox>
+                                </graphic>
+                            </Button>
+                        </FlowPane>
+                    </VBox>
+                    <VBox styleClass="category-section">
+                        <Label styleClass="category-title" text="Flexibility" />
+                        <Region styleClass="category-divider" />
+                        <FlowPane hgap="20" vgap="20">
+                            <Button onAction="#handleYogaClick" styleClass="exercise-card">
+                                <graphic>
+                                    <HBox alignment="CENTER_LEFT" spacing="10">
+                                        <VBox><Label styleClass="exercise-name" text="Yoga" /><Label styleClass="exercise-details" text="15 minutes" /></VBox>
+                                        <Region HBox.hgrow="ALWAYS" />
+                                        <Label styleClass="exercise-calories" text="50 calories" />
+                                    </HBox>
+                                </graphic>
+                            </Button>
+                            <Button onAction="#handleStretchingClick" styleClass="exercise-card">
+                                <graphic>
+                                    <HBox alignment="CENTER_LEFT" spacing="10">
+                                        <VBox><Label styleClass="exercise-name" text="Stretching" /><Label styleClass="exercise-details" text="10 minutes" /></VBox>
+                                        <Region HBox.hgrow="ALWAYS" />
+                                        <Label styleClass="exercise-calories" text="30 calories" />
+                                    </HBox>
+                                </graphic>
+                            </Button>
+                        </FlowPane>
+                    </VBox>
+                </VBox>
+            </content>
+        </ScrollPane>
+    </center>
+</BorderPane>

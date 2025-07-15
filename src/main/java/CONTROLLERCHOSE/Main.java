@@ -11,7 +11,7 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         userlist.initializeUserList(); // Panggil ini untuk memuat pengguna saat aplikasi dimulai
-        Parent root = FXMLLoader.load(getClass().getResource("controllerChose.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/CONTROLLERCHOSE/controllerChose.fxml"));
 
         Scene scene = new Scene(root);
 

@@ -1,0 +1,67 @@
+.root {
+    -fx-font-family: 'System';
+    -fx-background-color: #F7F9FC;
+}
+
+.exercise-title {
+    -fx-font-size: 48px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #171A1C;
+}
+
+.timer-text {
+    -fx-font-size: 120px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+}
+
+/* --- Tombol Aksi --- */
+
+.start-button {
+    -fx-background-color: #4CAF50; /* Hijau */
+    -fx-text-fill: white;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-padding: 15px 80px;
+    -fx-background-radius: 50px;
+    -fx-cursor: hand;
+}
+.start-button:hover { -fx-background-color: #45a049; }
+
+.stop-button {
+    -fx-background-color: #f44336; /* Merah */
+    -fx-text-fill: white;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-padding: 15px 80px;
+    -fx-background-radius: 50px;
+    -fx-cursor: hand;
+}
+.stop-button:hover { -fx-background-color: #d32f2f; }
+
+.finish-button {
+    -fx-background-color: #0277BD; /* Biru */
+    -fx-text-fill: white;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-padding: 15px 80px;
+    -fx-background-radius: 50px;
+    -fx-cursor: hand;
+}
+.finish-button:hover { -fx-background-color: #026aa7; }
+
+
+/* Tombol Back dibuat lebih simpel */
+.back-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #5A6065;
+    -fx-font-size: 14px;
+    -fx-padding: 10px;
+    -fx-border-color: transparent;
+    -fx-underline: true;
+    -fx-cursor: hand;
+}
+
+.back-button:hover {
+    -fx-text-fill: #171A1C;
+}

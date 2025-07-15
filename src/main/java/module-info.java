@@ -7,4 +7,6 @@ module JawLife {
 
     opens JawLife to javafx.fxml;
     exports JawLife;
+    exports CONTROLLERCHOSE;
+    opens CONTROLLERCHOSE to javafx.fxml;
 }

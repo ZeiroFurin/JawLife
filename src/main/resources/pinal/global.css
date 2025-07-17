@@ -1,0 +1,59 @@
+/* style/global.css */
+
+/* --- Base Styles --- */
+.root {
+    -fx-font-family: 'System';
+    -fx-background-color: #F7F9FC;
+}
+
+/* --- HEADER NAVIGASI ATAS YANG KONSISTEN --- */
+.header-nav {
+    -fx-padding: 15px 40px;
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #EAECEE;
+    -fx-border-width: 0 0 1px 0;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.header-nav .logo-text {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #171A1C;
+}
+
+/* Gaya default untuk semua tombol navigasi di header */
+.header-nav .nav-links .button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #5A6065; /* Warna abu-abu untuk tombol non-aktif */
+    -fx-font-size: 14px;
+    -fx-font-weight: 500;
+    -fx-padding: 8px 12px;
+    -fx-border-width: 0 0 2px 0;
+    -fx-border-color: transparent; /* Border bawah transparan secara default */
+    -fx-cursor: hand;
+}
+
+/* Efek hover untuk semua tombol navigasi */
+.header-nav .nav-links .button:hover {
+    -fx-text-fill: #171A1C; /* Teks menjadi lebih gelap saat di-hover */
+}
+
+/* Gaya untuk tombol navigasi yang SEDANG AKTIF */
+.header-nav .nav-links .nav-button-active {
+    -fx-text-fill: #4CAF50; /* Warna hijau untuk teks tombol aktif */
+    -fx-font-weight: bold;
+    -fx-border-color: #4CAF50; /* Garis bawah hijau untuk tombol aktif */
+}
+
+/* Gaya untuk tombol ikon di kanan (notifikasi, profil) */
+.header-nav .icon-button {
+    -fx-background-color: transparent;
+    -fx-padding: 5px;
+    -fx-background-radius: 50%;
+    -fx-cursor: hand;
+}
+
+.header-nav .profile-image {
+    -fx-border-radius: 50%;
+    -fx-background-radius: 50%;
+}

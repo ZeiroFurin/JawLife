@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JawLife.WorkoutCont">
+
+    <!-- TOP BAR -->
+    <HBox spacing="20" styleClass="topbar">
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20" />
+    </padding>
+    <Label styleClass="page-title" text="Workouts" />
+</HBox>
+
+    <!-- MAIN CONTENT -->
+    <center>
+        <VBox spacing="20">
+            <padding>
+                <Insets bottom="20" left="20" right="20" top="20" />
+            </padding>
+
+            <!-- STATISTICS -->
+            <HBox spacing="20">
+                <VBox styleClass="stat-card">
+                    <Label styleClass="stat-label" text="Total Workouts" />
+                    <Label fx:id="totalWorkoutsLabel" styleClass="stat-value" text="150" />
+                </VBox>
+                <VBox styleClass="stat-card">
+                    <Label styleClass="stat-label" text="Avg. Duration" />
+                    <Label fx:id="avgDurationLabel" styleClass="stat-value" text="45 min" />
+                </VBox>
+                <VBox styleClass="stat-card">
+                    <Label styleClass="stat-label" text="Calories Burned" />
+                    <Label fx:id="caloriesBurnedLabel" styleClass="stat-value" text="12,500" />
+                </VBox>
+            </HBox>
+
+            <!-- RECENT ACTIVITIES -->
+            <VBox spacing="12">
+                <Label styleClass="section-title" text="Recent Activities" />
+                <ListView fx:id="workoutListView" prefHeight="200" />
+            </VBox>
+        </VBox>
+    </center>
+   <stylesheets>
+      <URL value="@WO.css" />
+      <URL value="@Style.css" />
+   </stylesheets>
+</BorderPane>

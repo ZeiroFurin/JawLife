@@ -42,11 +42,11 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
-<dependency>
-    <groupId>de.jensd</groupId>
-    <artifactId>fontawesomefx</artifactId>
-    <version>8.9</version>
-</dependency>
+        <dependency>
+            <groupId>org.kordamp.ikonli</groupId>
+            <artifactId>ikonli-core</artifactId>
+            <version>12.3.1</version>
+        </dependency>
         <dependency>
             <groupId>org.kordamp.ikonli</groupId>
             <artifactId>ikonli-javafx</artifactId>
@@ -79,13 +79,15 @@
                 <groupId>org.openjfx</groupId>
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>0.0.8</version>
+                <configuration>
+                    <mainClass>JawLife.MainJL</mainClass>
+                </configuration>
                 <executions>
                     <execution>
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.example.jawlife_project/com.example.jawlife_project.HelloApplication
-                            </mainClass>
+                            <mainClass>JawLife.MainJL</mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>

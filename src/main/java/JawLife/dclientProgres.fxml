@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.net.URL?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.chart.BarChart?>
 <?import javafx.scene.chart.CategoryAxis?>
@@ -17,7 +18,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane stylesheets="@../ViewJawLife/ClinetProg.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JawLife.ClientProgress">
+<BorderPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JawLife.ClientProgress">
 
     <top>
         <HBox alignment="CENTER_LEFT" spacing="32" styleClass="navbar">
@@ -99,4 +100,8 @@
             </VBox>
         </HBox>
     </center>
+   <stylesheets>
+      <URL value="@../ViewJawLife/ClinetProg.css" />
+      <URL value="@ClinetProg.css" />
+   </stylesheets>
 </BorderPane>

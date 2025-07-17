@@ -124,7 +124,9 @@
         </HBox>
     </center>
    <stylesheets>
-      <URL value="@../ViewJawLife/Clientisi.css" />
       <URL value="@../ViewJawLife/GlobCl.css" />
+      <URL value="@Clientisi.css" />
+      <URL value="@ClinetProg.css" />
+      <URL value="@GlobCl.css" />
    </stylesheets>
 </BorderPane>
